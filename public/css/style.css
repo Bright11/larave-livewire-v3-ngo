@@ -1,0 +1,333 @@
+
+/* top-banner */
+.top-banner{
+    position: relative;
+    height: 500px;
+}
+.top-banner .bannerimg{
+width: 100%;
+height: 100%;
+}
+
+.top-banner .bannerimg img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.topaboutus{
+    max-width: 500px;
+    box-shadow: var(--boxshadow);
+    padding: 8px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -1px;
+    background-color: white;
+    left: 50px;
+}
+
+.topaboutus h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    font-family: var(--font-family);
+
+}
+.vissionh1{
+    margin-top: 10px !important;
+    text-align: center;
+}
+.topaboutus h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.linebottom{
+    width: 100px;
+    background-color: var(--background-color);
+    height: 10px;
+    border-radius: 10px;
+}
+.get-intouchlink{
+    padding: 8px;
+    text-align: center;
+    margin: 0px auto;
+    background-color: var(--background-color);
+    width: fit-content;
+    border-radius: 10px;
+    color: var(--color);
+    font-size: 15px;
+
+}
+.get-intouchlink:hover{
+    background-color: var(--color);
+    color: white;
+}
+
+/* video-content */
+.video-index-section{
+    margin: 100px 0px;
+}
+.video-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--background-color);
+    height: 300px;
+}
+.video-div{
+    width: 500px;
+    position: relative;
+    height: 350px;
+    padding: 20px;
+    box-shadow: var(--boxshadow);
+    background-color: white;
+    border-radius: 6px;
+}
+.video-div iframe{
+    width: 100% !important;
+    height: 100%;
+    border-radius: 6px;
+position: relative;
+}
+.clippathdiv2{
+    position: absolute;
+    top: 0;
+    width: 100% !important;
+    height: 100%;
+   box-shadow: var(--boxshadow);
+    clip-path: polygon(0 0, 2% 100%, 95% 0);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.clippathdiv{
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    position: absolute;
+    top: 0;
+    width: 100% !important;
+    height: 100%;
+    box-shadow: var(--boxshadow);
+}
+.video-div iframe:hover .pausevideo{
+   display: block !important;
+}
+.pausevideo{
+    display: none !important;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    background-color: var(--color);
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.playvideo i{
+    font-size: 50px;
+    color: white;
+}
+.pausevideo i{
+    font-size: 50px;
+    color: white;
+}
+.playvideo{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    background-color: var(--color);
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.changing-life{
+    width: 300px;
+}
+.changing-life h1{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.changelife-link{
+    padding: 10px;
+    background-color: var(--color);
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+.changelife-link::after{
+    content: "---";
+    color: var(--background-color);
+    padding: 10px;
+    font-size: 20px;
+}
+.changelife-link::before{
+    content: "---";
+    color: var(--background-color);
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* whatwedotextdiv */
+.what-we-do-content{
+    display: flex;
+    flex-direction: column;
+}
+.upcomingh1{
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 0.8px solid var(--background-color);
+}
+.whatwedotextdiv{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.whatwedop{
+    max-width: 500px;
+}
+.whatwedoh1div h1{
+    margin: 0;
+}
+/* event */
+.event-content{
+    display: flex;
+    flex-direction: column;
+}
+.events-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.event-img-content{
+    width: 300px;
+    height: 350px;
+    margin-bottom: 30px;
+}
+.event-img{
+    width: 100%;
+    height: 200px;
+    box-shadow: var(--boxshadow);
+}
+.event-img-content .event-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.event-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.event-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8px;
+}
+.date h1{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+.eventlink{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--color);
+border-radius: 8px;
+    width: max-content;
+    margin: 0px auto;
+}
+.eventlink a{
+    color: white;
+    font-size: 15px;
+}
+.location{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* our mission */
+.div-section{
+    display: flex;
+    flex-direction: column;
+}
+.missionh1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.missionh1::before{
+    content: "---";
+    font-size: 20px;
+    color: var(--background-color);
+}
+.missionh1::after{
+    content: "---";
+    font-size: 20px;
+    color: var(--background-color);
+}
+.mission-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+.mission-content div{
+    width: 250px;
+    padding: 8px;
+    height: 100px;
+    box-shadow: var(--boxshadow);
+    border: 0.6px solid var(--background-color);
+    border-radius: 10px;
+}
+.mission-content div p{
+    text-align: center;
+}
+
+.sponsorsh1{
+    text-align: center;
+}
+.sponsorsh1::after,.sponsorsh1::before{
+    content: "---";
+    color: var(--background-color);
+cursor: pointer;
+}
+
+
+@media(max-width:900px){
+    .topaboutus{
+       right: 0px;
+        left: 0px;
+        width: 90%;
+        margin: 0px auto;
+
+    }
+
+    .video-content{
+        flex-direction: column;
+        height:fit-content;
+        padding: 10px 0px;
+    }
+    .changing-life{
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+}

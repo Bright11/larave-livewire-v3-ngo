@@ -1,0 +1,91 @@
+@import url(settings.css);
+.navbar li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.navsection{
+    margin-bottom: 50px;
+}
+.navbar{
+    box-shadow: var(--boxshadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    position: fixed !important;
+    width: 100% !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    z-index: 99;
+}
+.logoli{
+   margin-right: 20px;
+}
+.navbar li img{
+    margin-left: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 999;
+   border: 1px solid var(--background-color);
+padding: 5px;
+box-shadow: var(--boxshadow);
+border-radius: 6px;
+width: 150px;
+}
+.navbar .ulclass{
+    display: flex;
+    align-items: center;
+}
+.navbar .ulclass li{
+    padding: 8px 10px;
+}
+.navbar .ulclass li a{
+    font-family: var(--font-family2);
+    text-transform: capitalize;
+    color: var(--color);
+    text-transform: capitalize;
+}
+.humbugar{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.humbugar i{
+    font-size: 34px;
+}
+
+.mobilenav-div{
+    display: none;
+}
+
+@media(max-width:900px){
+    .mobilenav-div{
+        display: block;
+    }
+    .navbar{
+        align-items: unset !important;
+        flex-wrap: wrap;
+    }
+    .open-navbar{
+        display: flex !important;
+    }
+    .navbar .ulclass {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 9999;
+        border-radius: 6px;
+    }
+    .navbar .ulclass  li a{
+        font-size: 20px;
+    }
+}
