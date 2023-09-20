@@ -21,3 +21,12 @@ use Illuminate\Support\Facades\Route;
 Route::get("/",[frontendController::class,'index'])->name("index");
 
 Route::get("/aboutus",[frontendController::class,'aboutus'])->name("aboutus");
+
+Route::get("/gallery",[frontendController::class,'gallery'])->name("gallery");
+
+Route::get("/whomweare",[frontendController::class,'whomweare'])->name("whomweare");
+
+Route::get("/involved",[frontendController::class,'involved'])->name("involved");
+
+
+Route::get("/contact",[frontendController::class,'contact'])->name("contact");
