@@ -1,0 +1,143 @@
+:root{
+    --background-color: rgb(236,196,75);
+    --color:black;
+    --boxshadow:0px 7px 30px -20px;
+    --font-family: 'Poppins', sans-serif;
+    --font-family2: 'Roboto', sans-serif;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* settings */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+.board-holder{
+    display: flex;
+    gap: 20px;
+}
+.sidabar{
+    flex-basis: 20%;
+    position: sticky;
+    background-color: var( --background-color) !important;
+    height: 100vh;
+}
+
+.main-content{
+    flex-basis: 80%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* the end */
+
+.sidebar-ul{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+.sidebar-ul li {
+box-shadow: var(--boxshadow);
+background-color: black;
+margin-top:0px ;
+margin-bottom: 10px;
+border-radius: 8px;
+padding: 8px;
+}
+.sidebar-ul li a i{
+    font-size: 20px;
+}
+.sidebar-ul li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* topbar */
+
+.topbar-item .topbar-ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: var(--boxshadow);
+}
+.topbar-ul li a{
+    color: black;
+}
+.topbar-ul li a i{
+    font-size: 24px;
+}
+
+
+/* conter */
+.conter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0px;
+}
+.counter-div{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100px;
+    box-shadow: var(--boxshadow);
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+.counter-div div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.counter-div h1{
+    margin: 0;
+    font-size: 15px;
+}
+.counter-div div i{
+    font-size: 24px;
+}
+.counter-div p{
+    text-align: center;
+}
+.add-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.add-data button{
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--background-color);
+    color: black;
+    width: max-content;
+    cursor: pointer;
+}
+
+.table-data{
+    position: relative;
+}
+.formadd-div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
