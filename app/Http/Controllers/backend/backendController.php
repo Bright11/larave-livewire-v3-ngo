@@ -13,4 +13,8 @@ class backendController extends Controller
 
         return view("backend.dashboard");
     }
+
+    public function addevent(){
+        return view("backend.addevent");
+    }
 }

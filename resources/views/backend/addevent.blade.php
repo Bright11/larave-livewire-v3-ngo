@@ -16,7 +16,7 @@
             @include("backend.layouts.counter")
            </div>
 
-           <livewire:backend.addgallery/>
+           <livewire:backend.addevent/>
 
         </div>
     </div>
